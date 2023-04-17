@@ -2,7 +2,7 @@
 
 ### This repository is an example of a complete stack built entirely in Rust ("RASTY"):
 
-- [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language) as almost unique base language (except for minimal JS needed to style the interface with TailwindCSS)
+- [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) as almost unique base language (except for minimal JS needed to style the interface with TailwindCSS)
 - [Actix-web](https://actix.rs/), a Rust framework, for the backend (our API server)
 - [SurrealDB](https://surrealdb.com/), the database that connects with our API, which has been developed by its creators with Rust
 - [Tauri App](https://tauri.app/), a Rust framework for building desktop applications, using web technology for the user interface
@@ -63,8 +63,6 @@ $ docker exec -it surrealdb /surreal sql -c http://localhost:8000 -u root -p roo
 
 namespace/database> SELECT * FROM task ORDER BY created_at DESC;
 ```
-
----
 
 ### 2.- todo-yew-web, Web application developed with Rust/WebAssembly + Yew + Tailwindcss.
 
