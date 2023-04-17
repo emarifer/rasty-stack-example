@@ -1,0 +1,5 @@
+dist
+public/tailwind_output.css
+node_modules
+target
+**.swp

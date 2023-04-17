@@ -1,0 +1,15 @@
+[package]
+name = "actix-surrealdb-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = { version = "4.3.1", features = ["macros"] }
+serde = { version = "1.0.159", features = ["derive"] }
+surrealdb = "1.0.0-beta.9"
+thiserror = "1.0.40"
+chrono = { version = "0.4.24", features = ["serde"] }
+futures = "0.3.28"
+actix-cors = "0.6.4"

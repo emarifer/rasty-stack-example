@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  surrealdb:
+    container_name: surrealdb
+    image: surrealdb/surrealdb:latest
+    # You can remove the memory option if you want to run the DB on disk
+    command: start --user root --pass root file:///data/database.db
+    ports:
+      - '8000:8000'
+    volumes: 
+      - /var/lib/docker/volumes/vol1:/data
+volumes:
+  surrealdb:
+    driver: local
