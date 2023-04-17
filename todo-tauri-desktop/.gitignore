@@ -1,7 +1,0 @@
-/dist/
-/target/
-/Cargo.lock
-
-/public/tailwind_output.css
-/node_modules/
-**.swp
